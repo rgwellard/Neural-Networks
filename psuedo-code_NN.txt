@@ -1,0 +1,18 @@
+pseudo-code for NN
+    
+    initialize neural network
+    input training data
+    for # of epochs
+        create mini-batch from input data (statistically representative)
+        for training example in mini-batch
+            for each layer, l = 2, 3 ... L                                      # Feed-forward
+                compute weighted inputs and activations#                       
+            calculate error at output layer            
+            for each layer, L, L-1, L-2 ...2                                    # Back-propagate
+                compute error at intermediate layers                            
+        calculate gradient descent to update weights, biases                    # Stochastic Gradient Descent                        
+        if test: print interim learning results
+    end
+
+       
+    
